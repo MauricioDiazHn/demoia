@@ -610,7 +610,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (emailRegex.test(email)) {
             emailError.classList.add('hidden');
-            const webhookUrl = 'https://demoia.app.n8n.cloud/webhook/register-player';
+            // const webhookUrl = 'https://demoia.app.n8n.cloud/webhook/register-player';
+            const webhookUrl = 'http://n8n-nkxaqenf.us-west-1.clawcloudrun.com/webhook/register-player';
 
             try {
                 const response = await fetch(webhookUrl, {
